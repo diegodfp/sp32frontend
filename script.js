@@ -3,7 +3,7 @@ const apiUrl = 'https://apisp32.onrender.com/api/sensor-data';
 
 async function fetchData() {
   try {
-    const response = await fetch(proxyUrl + apiUrl);
+    const response = await fetch( apiUrl);
     
     if (!response.ok) {
       throw new Error('Error al obtener los datos: ' + response.statusText);
